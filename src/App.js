@@ -1,9 +1,15 @@
-import './App.css';
+import Profile from "./Pages/Profile";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-     
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Profile />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
