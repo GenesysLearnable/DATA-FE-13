@@ -57,7 +57,14 @@ function NavBar() {
 
   return (
     <div className="sidebar">
-      <h2>Media Hub</h2>
+      <header className="header">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/f0a312d70048a81c3e0b97420bdbb31a4d89d2fb5982aec87ed80114733eedd2?apiKey=66cde03c14284deb81366fe06ee3971c&"
+          alt="Media Hub Logo"
+          className="logo"
+        />
+        <h1 className="title">Media Hub</h1>
+      </header>
       <div className="nav-container">
         <div className="nav">
           <h3>Menu</h3>
@@ -82,7 +89,7 @@ function NavBar() {
           <h3>Help</h3>
           <ul className="nav-ul">
             {help.map((help) => (
-              <li className="nav-li">
+              <li className="nav-li icon-div">
                 <div className="icon-div">
                   {help.logo}
                   {help.title}
