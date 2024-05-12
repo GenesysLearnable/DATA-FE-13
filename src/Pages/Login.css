@@ -1,0 +1,241 @@
+.container {
+  /* background-color: var(--background-dark-theme-02, #070615); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 57px;
+  /* background-color: #fff; */
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.header {
+  margin: 20px auto;
+  display: flex;
+  width: 96%;
+  align-items: center;
+  color: var(--text-Primary-text-02, #fefefe);
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.logo-container {
+  display: flex;
+  gap: 16px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.logo {
+  aspect-ratio: 0.96;
+  object-fit: auto;
+  object-position: center;
+  width: 69px;
+  fill: var(
+    --Button-Primary-button-and-link,
+    linear-gradient(94deg, #b5179e -13.04%, #7209b7 124.22%)
+  );
+}
+
+.logo-text {
+  font-family: Montserrat, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+.sign-up-button {
+  justify-content: center;
+  border-radius: 64px;
+  border: 3px solid var(--Button-Primary-button-and-link, #b5179e);
+  margin-top: 11px;
+  letter-spacing: -0.2px;
+  padding: 8px 18px;
+  font: 16px Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .sign-up-button {
+    padding: 0 23px;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.login-title {
+  color: var(--text-Primary-text-02, #fefefe);
+  letter-spacing: -0.5px;
+  font: 500 48px/133% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .login-title {
+    font-size: 40px;
+  }
+}
+
+.email-input {
+  border-radius: 64px;
+  border: 1px solid rgba(254, 254, 254, 1);
+  background-color: var(--Grey-disabled-02, #f8f7f7);
+  width: 608px;
+  max-width: 100%;
+  outline: none;
+  color: var(--text-helper-white-theme-03, #666);
+  letter-spacing: -0.2px;
+  padding: 20px 30px;
+  font: 600 16px/150% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .email-input {
+    margin-top: 40px;
+    padding: 20px 30px;
+  }
+}
+
+/* .password-input-container {
+  justify-content: space-between;
+  border-radius: 64px;
+  border: 1px solid rgba(254, 254, 254, 1);
+  background-color: var(--Grey-disabled-02, #f8f7f7);
+  display: flex;
+  margin-top: 32px;
+  width: 608px;
+  max-width: 100%;
+  gap: 10px;
+  justify-content: center;
+  color: var(--text-helper-white-theme-03, #666);
+  text-align: center;
+  letter-spacing: -0.2px;
+  line-height: 150%;
+  padding: 20px 30px;
+} */
+
+/* @media (max-width: 991px) {
+  .password-input-container {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+} */
+
+.password-input {
+  border-radius: 64px;
+  border: 1px solid rgba(254, 254, 254, 1);
+  background-color: var(--Grey-disabled-02, #f8f7f7);
+
+  width: 608px;
+  max-width: 100%;
+  color: var(--text-helper-white-theme-03, #666);
+
+  letter-spacing: -0.2px;
+  outline: none;
+  padding: 20px 30px;
+  font: 600 16px/150% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.forgot-password {
+  color: var(--text-Primary-text-02, #fefefe);
+  letter-spacing: -0.2px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration-line: underline;
+  background-color: var(
+    --Button-Primary-button-and-link,
+    linear-gradient(94deg, #b5179e -13.04%, #7209b7 124.22%)
+  );
+  /* margin-top: 22px; */
+  font: italic 600 16px/24px Montserrat, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.click-here {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .login-button {
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.social-login {
+  align-items: center;
+  display: flex;
+  margin-top: 64px;
+  gap: 6px;
+  font-size: 16px;
+  color: #f5f5f5;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+@media (max-width: 991px) {
+  .social-login {
+    margin-top: 40px;
+  }
+}
+
+.divider-line {
+  aspect-ratio: 100;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+  stroke-width: 1px;
+  stroke: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+.social-login-text {
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+  align-self: stretch;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 14rem;
+  /* justify-content: space-around; */
+}
+
+@media (max-width: 991px) {
+  .social-icons {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.social-icon {
+  /* aspect-ratio: 1.03; */
+  object-fit: auto;
+  object-position: center;
+  width: 40px;
+  height: 40px;
+}

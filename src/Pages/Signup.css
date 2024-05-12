@@ -7,11 +7,8 @@
   padding: 4rem 0rem;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 .navigation {
+  padding: 4rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,14 +43,15 @@ html {
 }
 
 .content {
-  max-width: 60rem;
-  max-height: auto;
+  width: 60%;
+  /* max-height: auto; */
   min-width: 16rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  margin: 5rem auto 0 auto;
+  margin-top: 1rem;
+  /* background-color: #fff; */
 }
 
 .h1 {
@@ -71,7 +69,7 @@ html {
   height: auto;
   background-color: #fff;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

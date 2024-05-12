@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import React from "react";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
@@ -42,6 +41,7 @@ const Signup = () => {
     }
   };
 
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -50,7 +50,7 @@ const Signup = () => {
   // const history = useHistory;
   const history = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!agreed) {
@@ -64,11 +64,36 @@ const Signup = () => {
     }
 
     setIsSubmitted(true);
-    history("/");
+    try {
+      const response = await fetch(
+        "https://data-be-13-4.onrender.com/api/v1/auth/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, password }), // Include name in the request body
+        }
+      );
+
+      if (response.ok) {
+        // Handle successful sign up
+        history("/VerificationPage");
+      } else {
+        // Handle sign-up failure
+        const data = await response.json();
+        alert(data.message || "Sign up failed");
+        setIsSubmitted(false);
+      }
+    } catch (error) {
+      console.error("Error during sign-up:", error);
+      alert("An error occurred during sign-up. Please try again later.");
+      setIsSubmitted(false);
+    }
   };
 
   return (
-    <div className="container">
+    <>
       <div className="navigation">
         <div className="navLogo">
           <img className="musicPic" src={musicPic} alt="volume bar" />
@@ -78,83 +103,95 @@ const Signup = () => {
           LOGIN
         </a>
       </div>
-      <form className="content" onSubmit={handleSubmit}>
-        <header className="h1"> Sign Up</header>
-        <div className="emailInput">
-          <input
-            type="email"
-            placeholder=" Enter Email"
-            className="inputEmail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="passwordInput">
-          <input
-            type={type}
-            placeholder="Enter Password"
-            className="inputCode"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+      <div className="container">
+        <form className="content" onSubmit={handleSubmit}>
+          <header className="h1"> Sign Up</header>
+          <div className="emailInput">
+            <input
+              type="text"
+              placeholder="Enter Name"
+              className="inputName"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="emailInput">
+            <input
+              type="email"
+              placeholder=" Enter Email"
+              className="inputEmail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="passwordInput">
+            <input
+              type={type}
+              placeholder="Enter Password"
+              className="inputCode"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
 
-          <span onClick={handleToggle}>
-            <Icon icon={icon} />
-          </span>
-        </div>
-        <div className="passwordInput">
-          <input
-            type={types}
-            placeholder="Confirm Password"
-            className="inputCode"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-          <span onClick={handleToggles}>
-            <Icon icon={icons} />
-          </span>
-        </div>
+            <span onClick={handleToggle}>
+              <Icon icon={icon} />
+            </span>
+          </div>
+          <div className="passwordInput">
+            <input
+              type={types}
+              placeholder="Confirm Password"
+              className="inputCode"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+            />
+            <span onClick={handleToggles}>
+              <Icon icon={icons} />
+            </span>
+          </div>
 
-        <div className="checkbox-container">
-          <input
-            type="checkbox"
-            checked={agreed}
-            onChange={(e) => setAgreed(e.target.checked)}
-            required
-            id="checkbox"
-          />
-          {/* <label className="checkboxText">
+          <div className="checkbox-container">
+            <input
+              type="checkbox"
+              checked={agreed}
+              onChange={(e) => setAgreed(e.target.checked)}
+              required
+              id="checkbox"
+            />
+            {/* <label className="checkboxText">
             I agree to the terms and conditions
           </label> */}
-        </div>
+          </div>
 
-        {/* <div className="terms">
+          {/* <div className="terms">
           <button className="clickTerm"></button>
           <p className="signupText">
-            By Signing up, you agree to our terms of service, privacy policy and
-            any applicable community guideliness
+          By Signing up, you agree to our terms of service, privacy policy and
+          any applicable community guideliness
           </p>
         </div> */}
-        <button type="submit" disabled={isSubmitted} className="signupBtn">
-          Sign Up
-        </button>
-      </form>
-      <footer className="footerPage">
-        <div className="footerP">
-          <img className="line" src={line} alt="line" />
-          <div className="footerText">or sign up with</div>
-          <img className="line" src={line} alt="line" />
-        </div>
-        <div className="footerLink">
-          <img className="footerIcon" src={googlePic} alt="google icon" />
-          <img className="footerIcon" src={applePic} alt="apple icon" />
-          <img className="footerIcon" src={facebookPic} alt="facebook icon" />
-        </div>
-      </footer>
-    </div>
+          <button type="submit" disabled={isSubmitted} className="signupBtn">
+            Sign Up
+          </button>
+        </form>
+        <footer className="footerPage">
+          <div className="footerP">
+            <img className="line" src={line} alt="line" />
+            <div className="footerText">or sign up with</div>
+            <img className="line" src={line} alt="line" />
+          </div>
+          <div className="footerLink">
+            <img className="footerIcon" src={googlePic} alt="google icon" />
+            <img className="footerIcon" src={applePic} alt="apple icon" />
+            <img className="footerIcon" src={facebookPic} alt="facebook icon" />
+          </div>
+        </footer>
+      </div>
+    </>
   );
 };
 
