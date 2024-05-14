@@ -1,5 +1,5 @@
-import LogoImage from '../AssetsLogo Text.svg'
-import styles from './Logo.css'
+import LogoImage from "../Assets/Logo Text.svg"
+import styles from './Logo.module.css'
 
 
 function Logo(){

@@ -1,4 +1,4 @@
-import styles from "./SignUpHeader.css"
+import styles from "./SignupHeader.module.css"
 import Logo from "./Logo";
 
 function SignUpHeader(){

@@ -1,6 +1,7 @@
 import Profile from "./Pages/Profile";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
+import NewPassword from "./Pages/NewPassword"
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -15,6 +16,7 @@ function App() {
           <Route path="Login" element={<Login />} />
           <Route path="VerificationPage" element={<VerificationPage />} />
           <Route path="Profile" element={<Profile />} />
+          <Route path="NewPassword" element={<NewPassword />} />
         </Routes>
       </BrowserRouter>
     </div>
