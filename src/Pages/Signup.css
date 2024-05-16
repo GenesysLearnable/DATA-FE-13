@@ -1,0 +1,166 @@
+.container {
+  width: 100vw;
+  max-width: 120rem;
+  min-width: 32rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 4rem 0rem;
+}
+
+.navigation {
+  padding: 4rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  border: 0.3rem solid #b5179e;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login:hover {
+  border-color: #7209b7;
+  transform: scale(1.1);
+}
+
+.login:active {
+  transform: scale(0.95);
+}
+
+.content {
+  width: 60%;
+  /* max-height: auto; */
+  min-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  /* background-color: #fff; */
+}
+
+.h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.passwordInput,
+.emailInput {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputCode,
+.inputEmail,
+input {
+  font-size: 1.8rem;
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: hidden;
+  padding: 0.5rem;
+  text-indent: 0.2rem;
+}
+
+.passwordInput span {
+  cursor: pointer;
+}
+.terms {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.clickTerm {
+  padding: 1rem;
+  border-radius: 100%;
+  border: 0.2rem solid #b5179e;
+  cursor: pointer;
+}
+
+.signupText {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.signupBtn {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 2rem auto 0 auto;
+  width: auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #b5179e, #7209b7);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.footerP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem auto;
+}
+
+.line {
+  width: 20rem;
+  height: 0.3rem;
+}
+
+.footerText {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+
+.footerIcon {
+  width: 4rem;
+  height: auto;
+  cursor: pointer;
+}
+
+#checkbox {
+  margin-right: 1rem;
+}
