@@ -2,6 +2,7 @@ import Profile from "./Pages/Profile";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import NewPassword from "./Pages/NewPassword"
+import MediaTracking from "./Pages/MediaTracking";
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,6 +18,7 @@ function App() {
           <Route path="VerificationPage" element={<VerificationPage />} />
           <Route path="Profile" element={<Profile />} />
           <Route path="NewPassword" element={<NewPassword />} />
+          <Route path="MediaTracking" element={<MediaTracking />} />
         </Routes>
       </BrowserRouter>
     </div>
