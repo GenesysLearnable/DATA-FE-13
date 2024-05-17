@@ -1,7 +1,7 @@
 import Profile from "./Pages/Profile";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
-import NewPassword from "./Pages/NewPassword"
+import NewPassword from "./Pages/NewPassword";
 import MediaTracking from "./Pages/MediaTracking";
 import "./App.css";
 
