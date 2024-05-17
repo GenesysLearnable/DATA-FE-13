@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
-import styles from './NewPassword.module.css'
-import SignUpHeader from '../Components/SignupHeader';
-
+import styles from './newPasword.module.css'
+import SignUpHeader from '../components/SignUpHeader';
+// import React, { useState } from 'react';
 
 
 function NewPassword(){
