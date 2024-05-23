@@ -5,7 +5,7 @@ import styles from './Logo.module.css'
 function Logo(){
     return(
         <main className={styles.logo}>
-            <img src={LogoImage} className={styles.logoImage} alt="logo"/>
+            <img src={LogoImage} className={styles.logoImage}/>
             <span className={styles.logoText}>
                 Media Hub
             </span>

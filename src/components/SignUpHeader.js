@@ -1,4 +1,4 @@
-import styles from "./SignUpHeader.module.css"
+import styles from "./SignupHeader.module.css"
 import Logo from "./Logo";
 
 function SignUpHeader(){
@@ -11,4 +11,4 @@ function SignUpHeader(){
         </main>
     );
 }
-export default SignUpHeader;
+export default SignUpHeader
