@@ -3,7 +3,9 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import NewPassword from "./Pages/NewPassword"
 import MediaTracking from "./Pages/MediaTracking";
+import Faq from "./Pages/Faq";
 import "./App.css";
+
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import VerificationPage from "./Pages/VerificationPage";
@@ -19,6 +21,7 @@ function App() {
           <Route path="Profile" element={<Profile />} />
           <Route path="NewPassword" element={<NewPassword />} />
           <Route path="MediaTracking" element={<MediaTracking />} />
+          <Route path="FAQ" element={<Faq />} />
         </Routes>
       </BrowserRouter>
     </div>

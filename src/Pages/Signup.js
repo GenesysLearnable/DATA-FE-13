@@ -99,7 +99,7 @@ const Signup = () => {
           <img className="musicPic" src={musicPic} alt="volume bar" />
           <img className="mediaPic" src={mediaPic} alt="Media name" />
         </div>
-        <a className="login" href="#">
+        <a className="login" href="./Login">
           LOGIN
         </a>
       </div>
