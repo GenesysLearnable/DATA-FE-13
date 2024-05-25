@@ -35,6 +35,9 @@ function MediaTracking(){
                         <option value="2">Pop</option>
                         <option value="3">Rap</option>
                         <option value="4">Christian & Gospel</option>
+                        <option value="5">Hip hop</option>
+                        <option value="6">Rock</option>
+                        <option value="7">Christian & Gospel</option>
                     </select>
                 </section>
                 <section>

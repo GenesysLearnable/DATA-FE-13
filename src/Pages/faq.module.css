@@ -1,0 +1,10 @@
+.body{
+    display: flex;
+}
+.main{
+    padding: 5rem 5rem 4rem 4rem;
+}
+.header{
+    margin-top: 0;
+    font-size: 4rem;
+}
