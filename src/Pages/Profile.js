@@ -1,6 +1,7 @@
 import NavBar from "../Components/NavBar";
 import { useState } from "react";
 import { FaApple, FaSpotify, FaSoundcloud } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "../Pages/Profile.css";
 
 const icons = [
@@ -78,6 +79,7 @@ function Account() {
   const [password, setPassword] = useState("");
 
   function handleForm(e) {
+    e.preventdefault();
     // Fix: preventDefault not prevent.default
   }
 
@@ -103,12 +105,19 @@ function Account() {
   );
 }
 function Button() {
+  const history = useNavigate();
+
   function handleDeleteAccount() {
     // Add logic for deleting account
   }
 
   function handleSignOut() {
     // Add logic for signing out
+    // Clear user session/token or any other user-related data
+    localStorage.removeItem("userToken"); // Assuming user token is stored in localStorage
+
+    // Redirect the user to the login page
+    history("/login");
   }
 
   return (

@@ -1,0 +1,315 @@
+/* .dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.dash-main {
+  width: 60%;
+
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.dash-main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.des-container {
+  max-width: 80%;
+  min-width: 30%;
+  background: linear-gradient(
+    150deg,
+    rgba(113, 9, 183, 0.158) 50.99%,
+    rgba(7, 6, 21, 0.884) 81.77%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 9.408px;
+
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.des-container p {
+  font-size: 1.4rem;
+  color: #c0c0c0;
+}
+
+.des-button {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.des-button button {
+  padding: 0.8rem 1.9rem;
+  border: 1px solid #881186;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.recomend {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+}
+
+.recomend h3 {
+  font-size: 1.5rem;
+}
+.h-card h2 {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+} */
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.dash-main {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.dash-main h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* .des-container {
+  max-width: 100%;
+  min-width: 90%;
+  background: linear-gradient(
+    150deg,
+    rgba(113, 9, 183, 0.158) 50.99%,
+    rgba(7, 6, 21, 0.884) 81.77%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 9.408px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+} */
+
+.des-container {
+  max-width: 80%;
+  min-width: 30%;
+  background: linear-gradient(
+    150deg,
+    rgba(113, 9, 183, 0.158) 50.99%,
+    rgba(7, 6, 21, 0.884) 81.77%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 9.408px;
+
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.des-container p {
+  font-size: 1.2rem;
+  color: #c0c0c0;
+}
+
+.des-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.des-button button {
+  padding: 0.8rem 1.9rem;
+  border: 1px solid #881186;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.recomend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.recomend h3 {
+  font-size: 1.5rem;
+}
+
+.h-card h2 {
+  text-align: left;
+  font-size: 2.5rem; /* Adjusted font size for better readability */
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+@media (max-width: 360px) {
+  .dash-main {
+    width: 100%;
+  }
+
+  #h-card-h2 {
+    font-size: 2rem;
+  }
+
+  .des-container {
+    gap: 0.4rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .des-img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .recomend {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: left;
+    /* padding: 4rem; */
+  }
+
+  .recomend span {
+    font-size: 1rem;
+  }
+
+  .recomend h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 366px) {
+  .dash-main {
+    width: 80%; /* Adjusted width */
+  }
+
+  .des-container {
+    max-width: 90%;
+    min-width: 80%;
+    padding: 1rem 3rem; /* Adjusted padding */
+    gap: 1.4rem;
+  }
+
+  .des-img {
+    width: 24rem;
+    height: 20rem;
+  }
+
+  .des-button {
+    flex-direction: row; /* Horizontal layout for buttons */
+  }
+}
+
+@media (max-width: 761px) {
+  .dashboard {
+    flex-direction: row;
+  }
+  .dash-main {
+    width: 70%;
+    margin: 6rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablet styles */
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .dash-main {
+    width: 70%;
+    margin-top: 6rem;
+  }
+
+  .des-container {
+    max-width: 80%;
+    min-width: 60%;
+    padding: 1rem 4rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .des-button {
+    flex-direction: row;
+  }
+  .recomend {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop styles */
+
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .dash-main {
+    width: 65%;
+    margin-left: 40rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+  }
+
+  .des-container {
+    max-width: 70%;
+    min-width: 50%;
+    padding: 4rem 6rem;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .des-container p {
+    font-size: 1.5rem;
+  }
+
+  .des-button {
+    flex-direction: row;
+  }
+
+  .des-button button {
+    font-weight: 700;
+  }
+
+  .recomend {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dash-main {
+    width: 60%;
+    margin: 6rem auto;
+  }
+}
