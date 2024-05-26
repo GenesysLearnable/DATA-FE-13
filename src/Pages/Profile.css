@@ -1,0 +1,481 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #070615;
+  color: #fff;
+} */
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 45%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* background-color: #fff; */
+}
+
+.profile-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1c0735;
+  border: 1px solid #881186;
+  border-radius: 15px;
+}
+.profile-details {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: 2rem;
+}
+
+.profile-email {
+  font-size: 1.2rem;
+}
+
+.syncm {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sync-lay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.icon {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  fill: #070615;
+}
+
+.plat-icon {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sync-lay p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sync-lay button {
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 6px 16px;
+  background-color: #881186;
+  color: #fff;
+  border: none;
+}
+
+.sync {
+  background-color: #19072f;
+  border: 1px solid #881186;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-lay {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #211f68;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #bbbb;
+}
+
+.form-lay input {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #211f68;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.form-lay input:first-child {
+  border-bottom: 1px solid #999;
+}
+
+.btn {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn button {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem 8rem;
+  border: 0.5px solid #bbbb;
+  border-radius: 20px;
+  background-color: #fa0000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 360px) {
+  .main-container {
+    width: 85%;
+    margin: 6rem auto;
+    gap: 15px;
+  }
+
+  .profile-details {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-email {
+    font-size: 1rem;
+  }
+
+  .sync-lay {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .plat-icon {
+    gap: 1rem;
+  }
+
+  .sync-lay p {
+    font-size: 1.4rem;
+  }
+
+  .sync-lay button {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+
+  .form-lay input {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .btn button {
+    font-size: 1.2rem;
+    padding: 0.8rem 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-container {
+    width: 85%;
+    margin: 5rem auto;
+    gap: 15px;
+  }
+
+  .profile-details {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile-name {
+    font-size: 1.4rem;
+  }
+
+  .profile-email {
+    font-size: 0.9rem;
+  }
+
+  .sync-lay {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .plat-icon {
+    gap: 8px;
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .sync-lay p {
+    font-size: 12px;
+  }
+
+  .sync-lay button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .form-lay input {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .btn button {
+    font-size: 10px;
+    padding: 0.6rem 3rem;
+  }
+}
+
+/* @media (min-width: 366px) and (max-width: 767px) {
+  .main-container {
+    width: 70%;
+    margin: 3rem auto;
+  }
+
+  .profile-details {
+    gap: 1.5rem;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-email {
+    font-size: 1.1rem;
+  }
+
+  .sync-lay {
+    gap: 0.5rem;
+  }
+
+  .plat-icon {
+    gap: 1rem;
+  }
+
+  .sync-lay p {
+    font-size: 18px;
+  }
+
+  .sync-lay button {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .form-lay input {
+    font-size: 18px;
+    padding: 1.4rem;
+  }
+
+  .btn button {
+    font-size: 14px;
+    padding: 0.9rem 6rem;
+  }
+} */
+
+@media (min-width: 366px) and (max-width: 767px) {
+  .main-container {
+    width: 80%;
+    margin: 5rem auto;
+    gap: 15px;
+  }
+
+  .profile-details {
+    gap: 1.5rem;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-email {
+    font-size: 1.1rem;
+  }
+
+  .sync-lay {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .plat-icon {
+    gap: 10px;
+  }
+
+  .icon {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .sync-lay p {
+    font-size: 10px;
+  }
+
+  .sync-lay button {
+    font-size: 10px;
+    padding: 4px 14px;
+  }
+
+  .form-lay input {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .btn button {
+    font-size: 10px;
+    padding: 0.9rem 6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container {
+    width: 60%;
+    margin: 5rem auto;
+  }
+
+  .profile-details {
+    gap: 1.8rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-email {
+    font-size: 1.2rem;
+  }
+
+  .sync-lay {
+    gap: 12px;
+  }
+
+  .plat-icon {
+    gap: 10px;
+  }
+
+  .sync-lay p {
+    font-size: 1.6rem;
+  }
+
+  .sync-lay button {
+    font-size: 1.2rem;
+    padding: 6px 16px;
+  }
+
+  .form-lay input {
+    font-size: 18px;
+    padding: 1.8rem;
+  }
+
+  .btn button {
+    font-size: 1.4rem;
+    padding: 1rem 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    width: 50%;
+    margin: 5rem auto;
+    margin-left: 40rem;
+  }
+
+  .profile-details {
+    gap: 1.8rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-email {
+    font-size: 1.2rem;
+  }
+
+  .sync-lay {
+    gap: 12px;
+  }
+
+  .plat-icon {
+    gap: 18px;
+  }
+
+  .sync-lay p {
+    font-size: 18px;
+  }
+
+  .sync-lay button {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+
+  .form-lay input {
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .btn button {
+    font-size: 14px;
+    padding: 1rem 8rem;
+  }
+}

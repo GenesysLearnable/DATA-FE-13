@@ -1,0 +1,353 @@
+.signup-container {
+  width: 100vw;
+  max-width: 120rem;
+  min-width: 32rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 4rem 0rem;
+}
+
+.login {
+  font-size: 1.6rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  border: 0.3rem solid #b5179e;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login:hover {
+  border-color: #7209b7;
+  transform: scale(1.1);
+}
+/* 
+.login:active {
+  transform: scale(0.95);
+} */
+
+.content {
+  min-width: 16rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.passwordInput,
+.emailInput {
+  border-radius: 64px;
+  border: 1px solid rgba(254, 254, 254, 1);
+  background-color: var(--Grey-disabled-02, #f8f7f7);
+  width: 600px;
+  max-width: 100%;
+  color: var(--text-helper-white-theme-03, #666);
+  letter-spacing: -0.2px;
+  outline: none;
+  padding: 15px 30px;
+  font: 600 16px/150% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputCode,
+.inputEmail,
+input {
+  font-size: 1.8rem;
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: hidden;
+  padding: 0.5rem;
+  text-indent: 0.2rem;
+}
+
+.passwordInput span {
+  cursor: pointer;
+}
+.terms {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.clickTerm {
+  padding: 1rem;
+  border-radius: 100%;
+  border: 0.2rem solid #b5179e;
+  cursor: pointer;
+}
+
+.signupText {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.signupBtn {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 2rem auto 0 auto;
+  width: auto;
+  padding: 1.2rem 2.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #b5179e, #7209b7);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.footerP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+}
+
+.line {
+  width: 20rem;
+  height: 0.3rem;
+}
+
+.footerText {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+
+.footerIcon {
+  width: 4rem;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Style the checkbox */
+#checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  appearance: none;
+  background-color: white;
+  border: 2px solid #7209b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#checkbox:checked {
+  background-color: #7209b7;
+}
+
+/* Add a checkmark when checked */
+#checkbox:checked::before {
+  content: "✔";
+  color: white;
+  font-size: 1.8rem;
+}
+
+/* Style the container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+/* Style the label */
+.checkbox-container label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #999; /* Text color */
+}
+
+@media (max-width: 360px) {
+  .signup-container {
+    padding: 2rem 1rem;
+  }
+  .h1 {
+    font-size: 2.5rem;
+  }
+  .passwordInput,
+  .emailInput {
+    width: 70%;
+    padding: 0.8rem 2rem;
+  }
+  .signupBtn {
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+
+  .footerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .footerIcon {
+    width: 2.6rem;
+    height: auto;
+    cursor: pointer;
+  }
+  .line {
+    width: 8rem;
+    height: 0.2rem;
+  }
+  #checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .signup-container {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+  }
+  .h1 {
+    font-size: 2.5rem;
+  }
+  .passwordInput,
+  .emailInput {
+    width: 60%;
+    padding: 0.4rem 1.5rem;
+  }
+
+  .inputCode,
+  .inputEmail,
+  input {
+    font-size: 12px;
+  }
+  .signupBtn {
+    width: 90%;
+    padding: 1rem 1.5rem;
+  }
+
+  .footerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .footerIcon {
+    width: 2.6rem;
+    height: auto;
+    cursor: pointer;
+  }
+  .line {
+    width: 6rem;
+    height: 0.2rem;
+  }
+  #checkbox {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width: 366px) and (max-width: 767px) {
+  .signup-container {
+    padding: 3rem 2rem;
+  }
+  .h1 {
+    font-size: 2.2rem;
+  }
+  .passwordInput,
+  .emailInput {
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+  /* .signupBtn {
+    width: 80%;
+    padding: 1rem 2rem;
+  } */
+  .footerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .footerIcon {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+  }
+  .line {
+    width: 8rem;
+    height: 0.2rem;
+  }
+  #checkbox {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signup-container {
+    padding: 4rem 3rem;
+  }
+  .h1 {
+    font-size: 2.8rem;
+  }
+  .passwordInput,
+  .emailInput {
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+  .signupBtn {
+    width: 70%;
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .signup-container {
+    padding: 4rem 4rem;
+  }
+  .h1 {
+    font-size: 3rem;
+  }
+  .passwordInput,
+  .emailInput {
+    width: 60%;
+    padding: 1.5rem 3rem;
+  }
+  .signupBtn {
+    width: 60%;
+    padding: 1.5rem 3rem;
+  }
+}
