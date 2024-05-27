@@ -111,6 +111,10 @@
   font-size: 1.5rem;
 } */
 
+.com {
+  color: hwb(301 7% 47%);
+}
+
 .des-container {
   max-width: 80%;
   min-width: 30%;

@@ -30,6 +30,7 @@
 // export default App;
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./Pages/Landingpage";
 import Profile from "./Pages/Profile";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
@@ -54,7 +55,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Signup />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="Signup" element={<Signup />} />
           <Route path="VerificationPage" element={<VerificationPage />} />
           <Route path="Login" element={<Login />} />
           <Route path="/Dashboard" element={<Dashboard />} />
