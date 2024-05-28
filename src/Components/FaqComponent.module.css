@@ -1,26 +1,28 @@
-.answerHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.answerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.answerHeading{
-    margin: 0;
-    font-size: 2rem;
-    
+.answerHeading {
+  text-align: left;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-.answerHidden{
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: 0.2s;
-    margin-top: 4rem;
+.answerHidden {
+  color: #999;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 4rem;
 }
 
-.answerExpanded{
-    max-height: 100vh;
-    opacity: 1;
-    margin-bottom: 2rem;
-    margin-top: 0.5rem;
+.answerExpanded {
+  max-height: 100vh;
+  opacity: 1;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  color: #999;
 }

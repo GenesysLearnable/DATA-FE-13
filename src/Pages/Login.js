@@ -21,7 +21,7 @@ function SignUpButton() {
 
   const handleSignUpClick = () => {
     // Navigate to the signup page
-    history("/");
+    history("/Signup");
   };
 
   return (
