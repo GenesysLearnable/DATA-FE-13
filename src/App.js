@@ -1,34 +1,3 @@
-// import Profile from "./Pages/Profile";
-// import Signup from "./Pages/Signup";
-// import Login from "./Pages/Login";
-// import NewPassword from "./Pages/NewPassword";
-// import MediaTracking from "./Pages/MediaTracking";
-// import Faq from "./Pages/Faq";
-// import "./App.css";
-
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import VerificationPage from "./Pages/VerificationPage";
-
-// function App() {
-//   return (
-//     <div>
-//       <BrowserRouter>
-//         <Routes>
-//           <Route path="/" element={<Signup />} />
-//           <Route path="Login" element={<Login />} />
-//           <Route path="VerificationPage" element={<VerificationPage />} />
-//           <Route path="Profile" element={<Profile />} />
-//           <Route path="NewPassword" element={<NewPassword />} />
-//           <Route path="MediaTracking" element={<MediaTracking />} />
-//           <Route path="FAQ" element={<Faq />} />
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "./Pages/Landingpage";
 import Profile from "./Pages/Profile";
@@ -42,7 +11,6 @@ import FAQ from "./Pages/FAQ";
 import Settings from "./Pages/Settings";
 import FetchMovies from "./Pages/FetchMovies";
 import Watchlist from "./Pages/Watchlist";
-import MusicPage from "./Pages/MusicPage";
 import Playlist from "./Pages/Playlist";
 import { useState } from "react";
 import "./App.css";
@@ -56,15 +24,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="Signup" element={<Signup />} />
+          <Route path="/Signup" element={<Signup />} />
           <Route path="VerificationPage" element={<VerificationPage />} />
           <Route path="Login" element={<Login />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="Profile" element={<Profile />} />
           <Route
-            path="/MusicPage"
+            path="/MediaTracking"
             element={
-              <MusicPage playlist={playlist} setPlaylist={setPlaylist} />
+              <MediaTracking playlist={playlist} setPlaylist={setPlaylist} />
             }
           />
           <Route
