@@ -15,7 +15,7 @@ Media Hub is a versatile platform designed to enhance your media streaming exper
 - Watchlists: Save and organize videos for later viewing.
 
 ### User Account Management
--User Onboarding:
+- User Onboarding:
   - Sign-Up: Users provide their details, including a Gmail address, to create an account.
   - Email Verification: An OTP pin is sent to the user's email for verification.
   - Verification Page: Users input the OTP pin to verify their account.
@@ -51,7 +51,7 @@ Media Hub is a versatile platform designed to enhance your media streaming exper
 ### 5. Enjoy Streaming:
    - Stream videos from Netflix and play music from Spotify directly within Media Hub.
 
-**NOTE**
+ ### **NOTE**
 Integrating other platform is not yet functioning
 
 ### Media Hub – Your one-stop platform for streaming and managing your favorite media!
