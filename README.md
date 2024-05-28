@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+### Media Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+Media Hub is a versatile platform designed to enhance your media streaming experience. With Media Hub, users can seamlessly stream videos via Netflix and play music through Spotify once their accounts are integrated. Additionally, users have the flexibility to manually add music and videos to the platform.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+### Integration with Streaming Services
+- Netflix Integration: Stream your favorite videos directly from Netflix.
+- Spotify Integration: Play music through your Spotify account.
 
-### `npm start`
+### Manual Media Management
+- Add Media: Users can manually add their own music and videos.
+- Playlists: Store and manage added music in custom playlists.
+- Watchlists: Save and organize videos for later viewing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Account Management
+-User Onboarding:
+  - Sign-Up: Users provide their details, including a Gmail address, to create an account.
+  - Email Verification: An OTP pin is sent to the user's email for verification.
+  - Verification Page: Users input the OTP pin to verify their account.
+  - Login Page: Verified users can log in and access their media dashboard.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Media Dashboard
+ - Dashboard: After logging in, users are taken to a media dashboard where they can manage their integrated accounts, playlists, watchlists, and manually added media.
 
-### `npm test`
+### Technologies Used
+### Media Hub is built using the following technologies:
+ - React: A JavaScript library for building user interfaces.
+ - React Icons: A library of icons for React applications.
+ - React Modal: A library for creating accessible modal dialogs in React.
+ - Axios: A promise-based HTTP client for making requests to APIs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Usage
 
-### `npm run build`
+### 1. Sign Up:
+  
+  - Provide your details including Gmail.
+  - Check your email for the OTP pin.
+  - Enter the OTP pin on the verification page to verify your account.
+### 2. Login:
+   - Use your credentials to log in.
+   - Access your media dashboard.
+### 3. Integrate Accounts:
+   - Link your Netflix and Spotify accounts to start streaming.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Manage Media:
+   - Add music and videos manually.
+   - Create and manage playlists and watchlists.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Enjoy Streaming:
+   - Stream videos from Netflix and play music from Spotify directly within Media Hub.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**NOTE**
+Integrating other platform is not yet functioning
 
-### `npm run eject`
+### Media Hub – Your one-stop platform for streaming and managing your favorite media!
+     
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
